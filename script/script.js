@@ -21,6 +21,7 @@ var perfilCompleto = window.document.querySelector('#perfilCompleto')
 
 
 
+
 //campo das datas e horarios
 var horas = document.querySelector('.hora')
 var dias = document.querySelector('.dia')

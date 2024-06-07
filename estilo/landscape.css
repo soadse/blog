@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-leve {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.leve {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-  
+
 * {
     padding: 0px;
     margin: 0px;
@@ -160,7 +160,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px;
+    margin-top: 35px;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.452);
     border-radius: 50px;
@@ -196,32 +196,11 @@ body {
     height: 40px;
     font-weight: bolder;
     box-shadow: 0px 5px 10px black;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-top: 30px;
 }
 .container > form > #entrar:active {
     filter: drop-shadow(0px 0px 10px black);
     width: 195px;
-    transition: all .1s;
-}
-.container > form > .divRedes {
-    width: 50%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-.container > form > .divRedes > div > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container > form > .divRedes > div > a > img {
-    width: 40%;
-}
-.container > form > .divRedes > div > a > img:hover{
-    filter: drop-shadow(0px 0px 10px black);
-    width: 50%;
     transition: all .1s;
 }

@@ -12,6 +12,20 @@ leve {
   font-optical-sizing: auto;
   font-style: normal;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+.montserrat-uniquifier {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
 
 
@@ -22,6 +36,12 @@ leve {
     --cor01: #2D527E;
     --cor02: #192e47;
     --cor03: #192e4725;
+    --cor04: #0B254F;
+    --fundo01: #2E537F;
+    --fundo02: #4C93AB;
+    --fundo03: #94C1D0;
+    --font01: "Montserrat", sans-serif;
+    --font02: "Cinzel", serif;
 }
 
 
@@ -40,13 +60,11 @@ leve {
 
 body {
     width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
-    
+    background: radial-gradient(circle, var(--fundo01), var(--fundo02), var(--fundo01));
+    font-family: var(--font01);
+    font-weight: lighter;
 }
-
-
-
 
 
 /* cabeçalho */
@@ -89,9 +107,9 @@ nav > a {
 /*menu: para acontecer algo depois que o cursor passar por cima com ':hover' */
 nav > a:hover {
     background-color: white;
-    border-radius: 50px;
+    border-radius: 5px;
     color: var(--cor01);
-    transition: color .5s;
+    transition: all .3s;
 }
 /* menu: para quando o elemento for clicado possa acontecer algo com ':active'*/
 nav > a:active {
@@ -105,15 +123,16 @@ nav > a:active {
 
 /* esta parte é para estilizar os 3 comentarios na parte superior da tela */
 main {
-    background-color: rgba(0, 0, 255, 0.041);
+    background-color: white;
     width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.500);
 }
 main > div {
-    background-color: rgba(0, 0, 255, 0.041);
+    background-color: white;
     width: 100%;
     height: 400px;
     display: flex;
@@ -175,7 +194,7 @@ main > div > .curtir > .c1, .c2 {
 
 /* esta parte é para estilizar todo conteudo de texto da página  */
 .texto {
-    background-color: rgba(0, 0, 255, 0.041);
+    background-color: white;
     width: 65%;
     margin: auto;
 }
@@ -191,7 +210,7 @@ main > div > .curtir > .c1, .c2 {
 }
 .texto > #citacao {
     margin: 30px;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.267);
 }
 .texto > h2 {
     text-align: center;
@@ -263,7 +282,7 @@ main > div > .curtir > .c1, .c2 {
 /* esta parte é para estilizar os comentarios da parte inferior do código */
 .comentarios {
     margin: auto;
-    background-color: rgba(0, 0, 255, 0.041);
+    background-color: white;
     width: 65%;
 }
 .comentarios > .perfilComentarios > .perfilCompleto {
@@ -378,12 +397,33 @@ main > div > .curtir > .c1, .c2 {
     border-radius: 0px 10px 10px 10px ;
 }
 
+.divRedes {
+    margin: auto;
+    background-color: white;
+    width: 65%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.divRedes > div {
+    margin: 10px;
+}
+.divRedes > div > a > img {
+    width: 30px;
+}
+.divRedes > div > a > img:hover {
+    filter: drop-shadow(5px 5px 5px black);
+}
+.divRedes > div > a > img:not(:hover){
+    transition: all .5s;
+}
+
 
 
 
 /* roda pé */
 footer {
-    background-color: var(--cor01);
+    background-color: var(--cor04);
     height: 30px;
     display: flex;
     justify-content: center;
