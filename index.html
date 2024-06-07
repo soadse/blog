@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/ico01.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/portrait.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilo/landscape.css" media="screen and (orientation: landscape)">
+    <title>Conexão Autista: Um Mundo de Descobertas</title>
+</head>
+<body>
+    <div class="container2" style="display: none;">
+        <h1>Criar Conta</h1>
+        <form action="#">
+            <div>
+                <label for="email2"><img src="imagens/pessoa.png" alt=""></label>
+                <input type="email" name="email2" id="email2" required placeholder="usuário@gmail.com">
+            </div>
+            <div>
+                <label for="senha2"><img src="imagens/cadeado.png" alt=""></label>
+                <input type="password" name="senha2" id="senha2" required>
+            </div>
+            <p id="erro2"></p>
+            <input type="submit" id="criar2" value="Criar Conta" onclick="login()">
+        </form>
+    </div>
+
+
+    <div class="container">
+        <div class="divBemVindo">
+            <h1>BEM VINDO</h1>
+            <h2 onclick="criar()">Novo Login</h2>
+        </div>
+
+        <form action="paginaInicial.html">
+            <h1>FAÇA LOGIN</h1>
+            <div class="divEmail">
+                <label for="email"><img src="imagens/pessoa.png" width="20px" alt=""></label>
+                <input type="email" name="email" id="email" class="recebeUsuario" required placeholder="@usuário_96">
+            </div>
+            <div class="divEmail">
+                <label for="senha"><img src="imagens/cadeado.png" width="20px" alt=""></label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div class="lembra">
+                <div>
+                    <input type="checkbox" name="lembrar" id="lembrar" style="cursor: pointer;">
+                    <label for="lembrar" style="cursor: pointer;">Lembrar</label>
+                </div>
+                <a href="#">Esqueceu senha?</a>
+            </div>
+            <input type="submit" name="entrar" id="entrar" class="" value="Entrar" onclick="acessar()">
+
+            <div class="divRedes">
+                <div><a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" rel="external"><img src="imagens/fb.png" alt=""></a></div>
+                <div><a href="https://www.tiktok.com/login?lang=pt-BR&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Dpt-BR" target="_blank" rel="external"><img src="imagens/tiktok.png" alt=""></a></div>
+            
+                <div><a href="https://www.instagram.com/accounts/login/" target="_blank" rel="external"><img src="imagens/instagram.png" alt=""></a></div>
+                <div><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank" rel="external"><img src="imagens/twitter.png" style="border-radius: 5px;" alt=""></a></div>
+            </div>
+        </form>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

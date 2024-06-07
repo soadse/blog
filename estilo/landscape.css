@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+leve {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+  
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/wallpaper02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.507);
+    backdrop-filter: blur(5px);
+}
+.container2 > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+}
+.container2 > form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container2 > form > div {
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+    height: 50px;
+}
+.container2 > form > div > input {
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.479);
+    text-align: center;
+    font-size: 20px;
+}
+.container2 > form > div > label > img {
+    width: 30px;
+    cursor: pointer;
+}
+.container2 > form > #criar2 {
+    width: 30%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2D527E;
+    color: white;
+    font-weight: bolder;
+}
+.container2 > form > #criar2:hover {
+    cursor: pointer;
+}
+.container2 > form > #criar2:active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    background-color: #203b5c;
+}
+
+
+
+.container {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.507);
+}
+.container > .divBemVindo{
+    background-image: url(../imagens/wallpaper03.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    backdrop-filter: blur(10px);
+}
+.container > .divBemVindo > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.container > .divBemVindo > h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.container > .divBemVindo > h2:hover {
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 10px;
+    border-radius: 50px;
+    color: #312F57;
+}
+
+.container > form {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.144);
+    width: 60%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    backdrop-filter: blur(5px);
+}
+.container > form > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    background-color: #2D527E;
+    color: white;
+    border-radius: 0px 10px 0px 0px;
+    ;
+}
+.container > form > .divEmail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 50px;
+    width: 70%;
+    height: 30px;
+}
+.container > form > .divEmail > input {
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.575);
+    background-color: transparent;
+    height: 100%;
+    width: 80%;
+    margin-left: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+.container > form > .divEmail > label > img {
+    cursor: pointer;
+}
+.container > form > .lembra {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    cursor: pointer;
+}
+.container > form > #entrar {
+    background-color: #2D527E;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    font-weight: bolder;
+    box-shadow: 0px 5px 10px black;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container > form > #entrar:active {
+    filter: drop-shadow(0px 0px 10px black);
+    width: 195px;
+    transition: all .1s;
+}
+.container > form > .divRedes {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container > form > .divRedes > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > form > .divRedes > div > a > img {
+    width: 40%;
+}
+.container > form > .divRedes > div > a > img:hover{
+    filter: drop-shadow(0px 0px 10px black);
+    width: 50%;
+    transition: all .1s;
+}

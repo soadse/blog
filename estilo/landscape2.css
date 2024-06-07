@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+
+
+
+
+/* UMA FONTE MAIS LEVE SE CASO PRECISAR USAR DEPOIS
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+leve {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+} */
+
+
+
+
+
+/* uma regra para facilitar o codigo com variaveis */
+:root {
+    --cor01: #2D527E;
+    --cor02: #192e47;
+    --cor03: #192e4725;
+}
+
+
+
+
+
+/* formata o codigo inteiro */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+
+
+
+
+/* cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor01);
+    color: white;
+}
+header > p {
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+
+
+/* menu */
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: var(--cor01);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.322);
+}
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+/*menu: para acontecer algo depois que o cursor passar por cima com ':hover' */
+nav > a:hover {
+    background-color: white;
+    border-radius: 50px;
+    color: var(--cor01);
+    transition: color .5s;
+}
+/* menu: para quando o elemento for clicado possa acontecer algo com ':active'*/
+nav > a:active {
+    background-color: var(--cor02);
+    color: white;
+}
+
+
+
+
+
+/* esta parte é para estilizar os 3 comentarios na parte superior da tela */
+main {
+    background-color: rgba(0, 0, 255, 0.041);
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+main > div {
+    background-color: rgba(0, 0, 255, 0.041);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+main > div:hover {
+    box-shadow: 10px 10px 10px black;
+    transition: all .5s;
+}
+/*para acontecer algo depois que o cursor sair de cima com ':not(:hover)' */
+main > div:not(:hover) {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    transition: all .5s;
+}
+main > div > img {
+    width: 100%;
+    overflow: hidden;
+}
+main > div > .perfil {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+main > div > .perfil > img {
+    width: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+main > div > p {
+    width: 90%;
+}
+main > div > .perfil > div > .data {
+    font-size: 15px;
+    color: var(--cor02);
+}
+main > div > .curtir {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main > div > .curtir > .mensagem {
+    width: 33px;
+}
+main > div > .curtir > .c1, .c2 {
+    width: 30px;
+    padding: 10px;
+}
+
+
+
+
+/* esta parte é para estilizar todo conteudo de texto da página  */
+.texto {
+    background-color: rgba(0, 0, 255, 0.041);
+    width: 65%;
+    margin: auto;
+}
+.texto > h1 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.texto > p {
+    text-indent: 2em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+.texto > #citacao {
+    margin: 30px;
+    background-color: lightblue;
+}
+.texto > h2 {
+    text-align: center;
+    margin: 20px;
+}
+.texto > h3 {
+    text-align: center;
+    font-size: 2em;
+    padding: 50px;
+    color: var(--cor02);
+}
+/*esta parte estou configurando o popover (janela que abre dentro da mesma janela)*/
+.texto > .popov {
+    display: flex;
+    justify-content: space-evenly;
+}
+.texto > .popov > div {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.texto > .popov > div > button{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 1px black);
+}
+.texto > .popov > div > button > img {
+    width: 200px;
+}
+.texto > .popov > div > button > img:hover {
+    width: 200px;
+    transition: all .5s;
+    filter: drop-shadow(-10px 10px 5px black);
+}
+.texto > .popov > div > button > img:not(:hover){
+    width: 200px;
+    filter: drop-shadow(0px 0px 5px black);
+    transition: all .5s;
+}
+.texto > .popov > div > p {
+    text-align: center;
+    font-size: 15px;
+    color: darkslategray;
+}
+.texto > .mypopover {
+    border: 1px solid black;
+    background-color: lightblue;
+    width: 300px;
+    margin: 10px;
+    border-radius: 0px 50px 50px 50px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.205);
+}
+.texto > .mypopover > video {
+    width: 300px;
+}
+.texto > .mypopover > p {
+    padding: 20px;
+    text-indent: 1em;
+    line-height: 30px;
+}
+
+
+
+
+
+/* esta parte é para estilizar os comentarios da parte inferior do código */
+.comentarios {
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.041);
+    width: 65%;
+}
+.comentarios > .perfilComentarios > .perfilCompleto {
+    display: flex;
+    align-items: center;
+}
+.comentarios > .perfilComentarios > .perfilCompleto > img {
+    width: 60px;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+.comentarios > .perfilComentarios > .perfilCompleto > .perfilData {
+    text-align: center;
+    padding-left: 10px;
+}
+.comentarios > .perfilComentarios > .textoComentario {
+    text-indent: 2em;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.comentarios > .curtir {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.comentarios > .curtir > .mensagem {
+    width: 33px;
+}
+.comentarios > .curtir > .c7, .c8 {
+    width: 30px;
+    padding: 10px;
+}
+/* esta parte é para estilizar o campo onde pode inserir seu proprio comentário  */
+.comentarios > .areaTexto {
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+.comentarios > .areaTexto > textarea {
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    text-decoration: none;
+    padding: 10px;
+}
+.comentarios > .comentario {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+.comentarios > .comentario > .comentarioEnviar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 10px;
+}
+.comentarios > .comentario > .comentarioEnviar > label > img {
+    width: 30px;
+    padding-top: 5px;
+}
+.comentarios > .comentario > .comentarioEnviar > img {
+    padding-left: 10px;
+    width: 30px;
+}
+.comentarios .comentario > #input-imagem {
+    display: flex;
+}
+.comentarios > .comentario > .perfilCompleto {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.comentarios > .comentario > .perfilCompleto > .conta {
+    display: flex;
+    align-items: center;
+}
+.comentarios > .comentario > .perfilCompleto > .conta > img {
+    width: 40px;
+    
+    padding-bottom: 5px;
+    border-radius: 50px;
+}
+.comentarios > .comentario > .perfilCompleto > .perfilData {
+    display: flex;  
+}
+.comentarios > .comentario > .perfilCompleto > .perfilData > p {
+    padding-left: 5px;  
+}
+/* campo onde aparecera o comentário inserido */
+.comentarios > .comentario > .mostraComentario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.comentarios > .comentario > .mostraComentario > div {
+    width: 100%;
+}
+/* esta parte aparecera o texto digitado */
+.comentarios > .comentario > .mostraComentario > div > #mostraTexto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
+/* esta parte aparecera a imagem selecionada */
+.comentarios > .comentario > .mostraComentario > #imagem-preview {
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px 10px 10px 10px ;
+}
+
+
+
+
+/* roda pé */
+footer {
+    background-color: var(--cor01);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer > a:hover {
+    text-decoration: underline;
+}
